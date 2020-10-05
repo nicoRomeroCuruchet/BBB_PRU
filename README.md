@@ -1,7 +1,7 @@
 # BeagleBone Black PRU
 A programmable real-time unit (PRU) is a fast (200-MHz, 32-bit) processor with single-cycle I/O access to a number of the pins and full access to the internal memory and peripherals on the AM3358 processor on BeagleBones. 
 
-1 - if any chage was made in PRU-RC-RECEIVER-00A0 must to re-compile for pru_0 and pru_1 .dts with the following line, then restar bbb:
+1 - if any chage was made in PRU-RC-RECEIVER-00A0 must to re-compile for pru_0 .dts with the following line, then restar bbb:
 
         dtc -O dtb -I dts -o /lib/firmware/PRU-RC-RECEIVER-00A0.dtbo -b 0 -@ PRU-RC-RECEIVER-00A0.dts
 
