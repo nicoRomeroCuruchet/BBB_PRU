@@ -5,7 +5,7 @@ A programmable real-time unit (PRU) is a fast (200-MHz, 32-bit) processor with s
 
         dtc -O dtb -I dts -o /lib/firmware/PRU-RC-RECEIVER-00A0.dtbo -b 0 -@ PRU-RC-RECEIVER-00A0.dts
 
-2 - if any change wasn't made should be able to charge the .dtbo without re-compile .dts with the following line whi:
+2 - if any change wasn't made should be able to charge the .dtbo without re-compile .dts with the following line:
 
         echo PRU-RC-RECEIVER > /sys/devices/bone_capemgr.?/slots
 
